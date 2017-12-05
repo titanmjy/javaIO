@@ -1,4 +1,4 @@
-package com.jinyu.io.calculator.nio.nioChannel;
+package com.jinyu.io.calculator.nio.basic.nioChannel;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -17,7 +17,7 @@ public class WebServer {
         try {
             ServerSocketChannel ssc = ServerSocketChannel.open();
             ssc.socket().bind(new InetSocketAddress("127.0.0.1", 8000));
-            SocketChannel sc = ssc.accept();
+            SocketChannel sc = ssc.accept();    //不是立即返回的，阻塞在此处等待连接
             System.out.println("阻塞在此处，等待客户端连接");
 
             ByteBuffer readBuffer = ByteBuffer.allocate(256);

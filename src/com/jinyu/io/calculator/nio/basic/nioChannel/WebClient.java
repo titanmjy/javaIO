@@ -1,4 +1,4 @@
-package com.jinyu.io.calculator.nio.nioChannel;
+package com.jinyu.io.calculator.nio.basic.nioChannel;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
