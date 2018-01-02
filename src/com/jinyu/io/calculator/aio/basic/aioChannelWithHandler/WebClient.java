@@ -28,6 +28,5 @@ public class WebClient {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

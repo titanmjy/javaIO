@@ -14,7 +14,6 @@ public class WebServer {
         try {
             AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open();
             server.bind(new InetSocketAddress("127.0.0.1",8888));
-
             server.accept(null, new AcceptHandler());
 
             while (true){
